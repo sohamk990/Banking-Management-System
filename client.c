@@ -597,6 +597,8 @@ int main()
 	connect(sd,(struct sockaddr *)&server,sizeof(server));
 	client_choose_option(sd);
 	client_show_menu(sd);
+	
+	//Closing the connection
 	close(sd);
 	return 0;
 }
